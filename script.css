@@ -1,0 +1,172 @@
+/* ---------- RESET & BASE ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.7;
+  background-color:beige;
+  color: #0f0f0f;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ---------- HEADER (background color 1) ---------- */
+#header {
+  background-color: #0b2545;
+  color: #ffffff;
+  text-align: center;
+  padding: 70px 20px 50px;
+}
+
+#header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+#header p.tagline {
+  font-size: 1.15rem;
+  font-style: italic;
+  color: #cdd9e5;
+}
+
+/* ---------- IMAGE SECTION ---------- */
+#image {
+  background-color: #0f4a92;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+#image img {
+  margin: 0 auto;
+  max-width: 320px;
+  border-radius: 8px;
+  border: 4px solid #ffffff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+#image figcaption {
+  color: #cdd9e5;
+  font-size: 0.9rem;
+  margin-top: 14px;
+}
+
+/* ---------- BIOGRAPHY (background color 2) ---------- */
+#bio {
+  background-color: #f7f2e9;
+}
+
+#bio h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0b2545;
+}
+
+#bio p {
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+}
+
+/* ---------- TIMELINE ---------- */
+#timeline {
+  background-color: #ffffff;
+}
+
+#timeline h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0b2545;
+  text-align: center;
+}
+
+.timeline-card {
+  background-color: #f7f2e9;
+  border-left: 5px solid #b0895b;
+  padding: 18px 22px;
+  margin-bottom: 18px;
+  border-radius: 4px;
+}
+
+.timeline-card h3 {
+  color: #0b2545;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.timeline-card .year {
+  font-weight: 700;
+  color: #b0895b;
+  margin-right: 8px;
+}
+
+/* ---------- QUOTE BLOCK ---------- */
+#quote {
+  background-color: #0b2545;
+  color: #ffffff;
+  text-align: center;
+}
+
+#quote blockquote {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+#quote blockquote::before {
+  content: "\201C";
+  font-size: 3rem;
+  color: #b0895b;
+  display: block;
+}
+
+#quote cite {
+  display: block;
+  margin-top: 18px;
+  font-size: 1rem;
+  color: #cdd9e5;
+  font-style: normal;
+}
+
+/* ---------- FOOTER ---------- */
+#footer {
+  background-color: #f7f2e9;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 600px) {
+  #header h1 {
+    font-size: 2rem;
+  }
+  #quote blockquote {
+    font-size: 1.25rem;
+  }
+  section {
+    padding: 40px 16px;
+  }
+}
